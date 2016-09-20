@@ -1,0 +1,350 @@
+2016-08-29 17:55:39 > test 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name"></FL>
+<FL val="Last Name">test</FL>
+<FL val="Email">f2406725@mvrht.com</FL>
+<FL val="Phone"></FL>
+<FL val="Description"> 176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000009898085</FL><FL val="Created Time">2016-08-29 17:55:39</FL><FL val="Modified Time">2016-08-29 17:55:39</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-08-29 17:56:47 > extraname  
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name"></FL>
+<FL val="Last Name">extraname</FL>
+<FL val="Email">test1@ema.il</FL>
+<FL val="Phone"></FL>
+<FL val="Description"> 176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000009848077</FL><FL val="Created Time">2016-08-29 17:56:47</FL><FL val="Modified Time">2016-08-29 17:56:47</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-01 10:27:42 > Sergey Fedirko 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name">Sergey</FL>
+<FL val="Last Name">Fedirko</FL>
+<FL val="Email">sergey.fedirko@gmail.com</FL>
+<FL val="Phone"></FL>
+<FL val="Description"> 176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010076017</FL><FL val="Created Time">2016-09-01 10:27:42</FL><FL val="Modified Time">2016-09-01 10:27:42</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-01 10:30:15 > Sergey Fedirko 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name">Sergey</FL>
+<FL val="Last Name">Fedirko</FL>
+<FL val="Email">sergey.fedirko@gmail.com</FL>
+<FL val="Phone"></FL>
+<FL val="Description"> 176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010076021</FL><FL val="Created Time">2016-09-01 10:30:15</FL><FL val="Modified Time">2016-09-01 10:30:15</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-02 11:30:43 > Sergey Fedirko 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name">Sergey</FL>
+<FL val="Last Name">Fedirko</FL>
+<FL val="Email">sergey.fedirko@gmail.com</FL>
+<FL val="Phone">667670007</FL>
+<FL val="Description">Name: Sergey Fedirko
+Phone: 667670007
+Email: sergey.fedirko@gmail.com
+Request: This is test message! Say &quot;Good job!&quot; to your developer :)
+URL: http://lp.outsoft.com/outsoft/
+IP:  176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010133009</FL><FL val="Created Time">2016-09-02 11:30:42</FL><FL val="Modified Time">2016-09-02 11:30:42</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-03 00:05:27 > Dima Klimenko 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name">Dima</FL>
+<FL val="Last Name">Klimenko</FL>
+<FL val="Email">tayota_dp@mail.ru</FL>
+<FL val="Phone">sdf23</FL>
+<FL val="Description">Name: Dima Klimenko
+Phone: sdf23
+Email: tayota_dp@mail.ru
+Request: HZ
+URL: http://lp.outsoft.com/outsoft/
+IP:  91.195.249.180</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010190013</FL><FL val="Created Time">2016-09-03 00:05:27</FL><FL val="Modified Time">2016-09-03 00:05:27</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-03 13:33:47 > test 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name"></FL>
+<FL val="Last Name">test</FL>
+<FL val="Email">f2406725@mvrht.com</FL>
+<FL val="Phone">Skype-time</FL>
+<FL val="Description">Name: test
+Phone: Skype-time
+Email: f2406725@mvrht.com
+Request: o You Need
+URL: http://lp.outsoft.com/outsoft/
+IP:  176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010241001</FL><FL val="Created Time">2016-09-03 13:33:47</FL><FL val="Modified Time">2016-09-03 13:33:47</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-06 11:03:22 > Sergey Fedirko 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">вапвап</FL>
+<FL val="First Name">Sergey</FL>
+<FL val="Last Name">Fedirko</FL>
+
+<FL val="Landing Page">http://lp.outsoft.com/outsoft/?lang=%D0%B2%D0%B0%D0%BF%D0%B2%D0%B0%D0%BF&keyword=test%20keyword</FL>
+<FL val="Request String">test keyword</FL>
+
+<FL val="Email">sergey.fedirko@gmail.com</FL>
+<FL val="Phone">667670007</FL>
+<FL val="Description">Name: Sergey Fedirko
+Phone: 667670007
+Email: sergey.fedirko@gmail.com
+Request: test request
+URL: http://lp.outsoft.com/outsoft/?lang=%D0%B2%D0%B0%D0%BF%D0%B2%D0%B0%D0%BF&amp;keyword=test%20keyword
+IP:  176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ - - - - - - - -
+4835 : Unable to parse XML data
+
+2016-09-06 16:16:07 > test 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">resume1.outsoft.com</FL>
+<FL val="Request String">SHARP-DEVELOPERS</FL>
+<FL val="First Name"></FL>
+<FL val="Last Name">test</FL>
+
+<FL val="Landing Page">http://lp.outsoft.com/outsoft/?lang=SHARP-DEVELOPERS</FL>
+<FL val="Request String"></FL>
+
+<FL val="Email">test@ema.il</FL>
+<FL val="Phone">Skype-time</FL>
+<FL val="Description">Name: test
+Phone: Skype-time
+Email: test@ema.il
+Request: 12qw
+URL: http://lp.outsoft.com/outsoft/?lang=SHARP-DEVELOPERS
+IP:  176.106.1.184</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010296045</FL><FL val="Created Time">2016-09-06 16:16:07</FL><FL val="Modified Time">2016-09-06 16:16:07</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-07 12:08:07 > Uri David 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">empty</FL>
+<FL val="First Name">Uri</FL>
+<FL val="Last Name">David</FL>
+
+<FL val="Landing Page"></FL>
+<FL val="Request String"></FL>
+
+<FL val="Email">uri@red-id.com</FL>
+<FL val="Phone">+972-544-232377</FL>
+<FL val="Description">Name: Uri David
+Phone: +972-544-232377
+Email: uri@red-id.com
+Request: Red interactive design is a company of experts that specialised with developing web strategy &amp; product concept, UX &amp; Design and development of websites, software and applications. Red-Id is seeking for a development company with the following requirments:
+Software development outsource requirements
+•	Technical skills/knowledge/experience:
+o	DOT net
+o	HTML
+o	Java script
+o	PHP
+o	SQL server
+o	C#
+o	Magento eCommerce platform
+o	AngularJS
+o	Umbraco CMS
+o	Mobile application - Native and on-Native development
+o	QA
+•	Company size – small medium with proven/visible portfolio 
+•	Projects costs by fix price or per hour
+•	Communication language – English (fluent)
+•	Communication concept – at least one weekly project meeting and ad hook meetings as required.
+•	One contact point for project management and one for development/programming
+•	Provide full and detailed project plan
+•	Meeting the development team that will work on the project
+•	Work method (via Skype):
+o	Kickoff meeting project brief
+o	Project plan review (sprint based)
+o	Project wires review
+o	Project design review
+Possible - a monthly visit of Red-ID CTO to meet development team 
+•	Backup – code developed will be backed up on a daily basis to shared cloud storage.
+
+URL: http://lp.outsoft.com/outsoft/
+IP:  62.219.47.3</FL>
+<FL val="Country">Israel</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010393013</FL><FL val="Created Time">2016-09-07 12:08:07</FL><FL val="Modified Time">2016-09-07 12:08:07</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-09 15:30:14 > testppc2 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">none</FL>
+<FL val="Request String">C# Developer</FL>
+<FL val="First Name"></FL>
+<FL val="Last Name">testppc2</FL>
+
+<FL val="Landing Page">http://lp.outsoft.com/outsoft/?lang=C%23%20Developer</FL>
+<FL val="Request String"></FL>
+
+<FL val="Email">testppc2@gmail.com</FL>
+<FL val="Phone">testppc2</FL>
+<FL val="Description">Name: testppc2
+Phone: testppc2
+Email: testppc2@gmail.com
+Request:  testppc2 testppc2 testppc2
+URL: http://lp.outsoft.com/outsoft/?lang=C%23%20Developer
+IP:  213.169.89.135</FL>
+<FL val="Country">Ukraine</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010442049</FL><FL val="Created Time">2016-09-09 15:30:14</FL><FL val="Modified Time">2016-09-09 15:30:14</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
+2016-09-12 14:45:00 > Daniel Kan 
+
+<Leads>
+<row no="1">
+<FL val="Lead Source">resume1.outsoft.com</FL>
+<FL val="Request String">Google Play Developers</FL>
+<FL val="First Name">Daniel</FL>
+<FL val="Last Name">Kan</FL>
+
+<FL val="Landing Page">http://lp.outsoft.com/outsoft/?lang=Google+Play+Developers&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_content=search&amp;utm_campaign=Languages&amp;utm_creative=Google+Play+developer</FL>
+<FL val="Request String"></FL>
+
+<FL val="Email">daniel@teammusic.co</FL>
+<FL val="Phone">97317467</FL>
+<FL val="Description">Name: Daniel Kan
+Phone: 97317467
+Email: daniel@teammusic.co
+Request: 
+URL: http://lp.outsoft.com/outsoft/?lang=Google+Play+Developers&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_content=search&amp;utm_campaign=Languages&amp;utm_creative=Google+Play+developer
+IP:  202.166.73.45</FL>
+<FL val="Country">Singapore</FL>
+<FL val="Landing Page">http://lp.outsoft.com</FL>
+<FL val="Lead Status">NEW</FL>
+<FL val="Lead Owner">taras@outsoft.com</FL>
+</row>
+</Leads>
+ * * * * * * * *
+Result: <?xml version="1.0" encoding="UTF-8" ?>
+<response uri="/crm/private/xml/Leads/insertRecords"><result><message>Record(s) added successfully</message><recorddetail><FL val="Id">1477498000010622033</FL><FL val="Created Time">2016-09-12 14:45:00</FL><FL val="Modified Time">2016-09-12 14:45:00</FL><FL val="Created By"><![CDATA[Oleksandra Burmenska]]></FL><FL val="Modified By"><![CDATA[Oleksandra Burmenska]]></FL></recorddetail></result></response>
+
+
