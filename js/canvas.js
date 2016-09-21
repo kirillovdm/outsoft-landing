@@ -2,11 +2,11 @@ var container, wrapper, wrapper2;
 var scene, camera;
 var cube_texture, loader, textured_cube;
 var mouseX, mouseY;
-var hatArr = [];
+var hatArr = [], model;
 
 container = document.getElementById('vr-canvas');
 wrapper = document.getElementById('canvas-wrapper');
-console.log(container, wrapper.innerWidth);
+console.log(container, wrapper.offsetWidth);
 // document.body.appendChild(container);
 
 renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -19,7 +19,7 @@ scene = new THREE.Scene();
 
 camera.position.x = 10;
 camera.position.y = 100;
-camera.position.z = 600;
+camera.position.z = 300;
 camera.rotation.x = -0.225;
 camera.rotation.y = 0;
 
@@ -60,7 +60,7 @@ var textured_cube_material = new THREE.MeshBasicMaterial({color:0xcccccc});
 //    }
 
 textured_cube = new THREE.Mesh(textured_cube_geometry, textured_cube_material);
-scene.add(textured_cube);
+// scene.add(textured_cube);
 
 var outlineMaterial2 = new THREE.MeshBasicMaterial( { color: 0x00ff00, side: THREE.BackSide } );
 var outlineMesh2 = new THREE.Mesh( textured_cube_geometry, outlineMaterial2 );
@@ -69,50 +69,70 @@ outlineMesh2.scale.multiplyScalar(1.05);
 // scene.add( outlineMesh2 );
 
 
+//LIGHT
+//AMBIENT
+var ambientLight = new THREE.AmbientLight( 0xeeeeee, 0.7);
+scene.add( ambientLight );
+
+//DIRECTIONAL
+var spotLight = new THREE.SpotLight( 0xffffff, 0.3 );
+//        spotLight = new THREE.SpotLight( 0xffffff, spot_light_gui.d_intensity, 0.0, Math.PI/3 );
+
+spotLight.castShadow = true;
+//        spotLight.shadow.bias = 0.00001;
+//        spotLight.shadow.darkness = 10;
+spotLight.shadow.mapSize.width = 2048;
+spotLight.shadow.mapSize.height = 2048;
+
+spotLight.position.set(1250, 0, 70);
+scene.add( spotLight );
+
 // MODEL
-// var onProgress = function ( xhr ) {
-//     if ( xhr.lengthComputable ) {
-//         var percentComplete = xhr.loaded / xhr.total * 100;
-//         console.log( Math.round(percentComplete, 2) + '% downloaded' );
-// //                if( percentComplete > 99){
-// //                    onLoadAnimations();
-// //                }
-//     }
-// };
-// var onError = function ( xhr ) { };
+var onProgress = function ( xhr ) {
+    if ( xhr.lengthComputable ) {
+        var percentComplete = xhr.loaded / xhr.total * 100;
+        console.log( Math.round(percentComplete, 2) + '% downloaded' );
+//                if( percentComplete > 99){
+//                    onLoadAnimations();
+//                }
+    }
+};
+var onError = function ( xhr ) { };
+
+THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
+
+var mtlLoader = new THREE.MTLLoader();
+mtlLoader.setPath( './obj/' );
+mtlLoader.load( 'vr.mtl', function( materials ) {
+
+    materials.preload();
+
+    var objLoader = new THREE.OBJLoader();
+    objLoader.setMaterials( materials );
+    objLoader.setPath( './obj/' );
+    objLoader.load( 'vr.obj', function ( obj ) {
+
+        scene.add( obj );
+        obj.position.set(1150, -70, 70);
+        model = jQuery.extend(true, {}, obj);
+        console.log(obj);
 //
-// THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
-//
-// var mtlLoader = new THREE.MTLLoader();
-// mtlLoader.setPath( './obj/' );
-// mtlLoader.load( 'Google_vr.mtl', function( materials ) {
-//
-//     materials.preload();
-//
-//     var objLoader = new THREE.OBJLoader();
-//     objLoader.setMaterials( materials );
-//     objLoader.setPath( './obj/' );
-//     objLoader.load( 'Google_vr.obj', function ( obj ) {
-//
-//         scene.add( obj );
-//
-// //         obj.traverse( function (child) {
-// //             if ( child instanceof THREE.Mesh ) {
-// // //                        console.log(child);
-// //
-// //                 child.castShadow = true;
-// //                 child.receiveShadow = true;
-// // //                        child.material.opacity = 0;
-// //
-// //                 // TweenMax.from(child.material, 2.5, {opacity: 0, delay:.5});
-// //
-// //                 hatArr.push(child);
-// //             }
-// //         });
-//
-//     }, onProgress, onError );
-//
-// });
+        obj.traverse( function (child) {
+            if ( child instanceof THREE.Mesh ) {
+//                        console.log(child);
+
+                child.castShadow = true;
+                child.receiveShadow = true;
+//                        child.material.opacity = 0;
+
+                // TweenMax.from(child.material, 2.5, {opacity: 0, delay:.5});
+
+                hatArr.push(child);
+            }
+        });
+
+    }, onProgress, onError );
+});
 // MODEL END
 
 
@@ -133,7 +153,7 @@ var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 
 //MOUSE CONTROLS
 document.addEventListener('mousemove', function (event) {
-    mouseX = (event.clientX - (window.innerWidth / 2));
+    mouseX = (event.clientX - (window.innerWidth / 4));
     mouseY = (event.clientY - (window.innerHeight / 2));
     camera.position.x += (mouseX - camera.position.x) * 0.25;
     camera.position.y += (-mouseY - camera.position.y) * 0.25;
@@ -162,12 +182,14 @@ var animation = function(){
     scene.position.y = rotation_trigger.positionY;
     scene.position.z = rotation_trigger.positionZ;
 
-    outlineMesh2.rotation.x += rotation_trigger.rotationX;
-    outlineMesh2.rotation.y += rotation_trigger.rotationY;
-    outlineMesh2.rotation.z += rotation_trigger.rotationZ;
-    outlineMesh2.position.x = rotation_trigger.positionX;
-    outlineMesh2.position.y = rotation_trigger.positionY;
-    outlineMesh2.position.z = rotation_trigger.positionZ;
+    //
+    // outlineMesh2.rotation.x += rotation_trigger.rotationX;
+    // outlineMesh2.rotation.y += rotation_trigger.rotationY;
+    // outlineMesh2.rotation.z += rotation_trigger.rotationZ;
+    // outlineMesh2.position.x = rotation_trigger.positionX;
+    // outlineMesh2.position.y = rotation_trigger.positionY;
+    // outlineMesh2.position.z = rotation_trigger.positionZ;
+
 
 //        if(!(camera.rotation.y < -3.2)){
 //            camera.rotation.y += -180/Math.PI * 0.00009;
