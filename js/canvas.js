@@ -1,4 +1,4 @@
-var container, wrapper, wrapper2;
+var container, wrapper, wrapper2, cameraHelper;
 var scene, camera;
 var cube_texture, loader, textured_cube;
 var mouseX, mouseY;
@@ -9,8 +9,11 @@ wrapper = document.getElementById('canvas-wrapper');
 console.log(container, wrapper.offsetWidth);
 // document.body.appendChild(container);
 
-renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer = new THREE.WebGLRenderer({ antialias:true, alpha: true });
 renderer.setSize(wrapper.offsetWidth, wrapper.offsetHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMapSoft = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 // renderer.setClearColor(0xe0e0e0, 1);
 container.appendChild(renderer.domElement);
 
@@ -71,21 +74,28 @@ outlineMesh2.scale.multiplyScalar(1.05);
 
 //LIGHT
 //AMBIENT
-var ambientLight = new THREE.AmbientLight( 0xeeeeee, 0.7);
+var ambientLight = new THREE.AmbientLight( 0xffffff, 0.7);
 scene.add( ambientLight );
 
 //DIRECTIONAL
-var spotLight = new THREE.SpotLight( 0xffffff, 0.3 );
+var spotLight = new THREE.SpotLight( 0xffffff, 2 );
 //        spotLight = new THREE.SpotLight( 0xffffff, spot_light_gui.d_intensity, 0.0, Math.PI/3 );
 
 spotLight.castShadow = true;
 //        spotLight.shadow.bias = 0.00001;
 //        spotLight.shadow.darkness = 10;
-spotLight.shadow.mapSize.width = 2048;
-spotLight.shadow.mapSize.height = 2048;
+spotLight.shadow.mapSize.width = 1024;
+spotLight.shadow.mapSize.height = 1024;
 
-spotLight.position.set(1250, 0, 70);
+spotLight.position.set(1200, 200, 1200);
 scene.add( spotLight );
+
+        //CAMERA LIGHT HELPER
+       cameraHelper = new THREE.CameraHelper( spotLight.shadow.camera );
+       scene.add( cameraHelper );
+console.log(spotLight);
+console.log(ambientLight);
+
 
 // MODEL
 var onProgress = function ( xhr ) {
@@ -153,7 +163,7 @@ var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 
 //MOUSE CONTROLS
 document.addEventListener('mousemove', function (event) {
-    mouseX = (event.clientX - (window.innerWidth / 4));
+    mouseX = (event.clientX - (window.innerWidth / 2));
     mouseY = (event.clientY - (window.innerHeight / 2));
     camera.position.x += (mouseX - camera.position.x) * 0.25;
     camera.position.y += (-mouseY - camera.position.y) * 0.25;
@@ -182,6 +192,8 @@ var animation = function(){
     scene.position.y = rotation_trigger.positionY;
     scene.position.z = rotation_trigger.positionZ;
 
+    scene.rotation.y += 0.005;
+
     //
     // outlineMesh2.rotation.x += rotation_trigger.rotationX;
     // outlineMesh2.rotation.y += rotation_trigger.rotationY;
@@ -195,6 +207,7 @@ var animation = function(){
 //            camera.rotation.y += -180/Math.PI * 0.00009;
 //            camera.position.z +=-1;
 //        }
+
 
     renderer.render(scene, camera);
 };
