@@ -90,11 +90,18 @@ spotLight.shadow.mapSize.height = 1024;
 spotLight.position.set(1200, 200, 1200);
 scene.add( spotLight );
 
-        //CAMERA LIGHT HELPER
-       cameraHelper = new THREE.CameraHelper( spotLight.shadow.camera );
-       scene.add( cameraHelper );
-console.log(spotLight);
-console.log(ambientLight);
+
+var hemisphereLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 2 );
+scene.add( hemisphereLight );
+
+console.log(hemisphereLight);
+
+
+
+
+//CAMERA LIGHT HELPER
+cameraHelper = new THREE.CameraHelper( spotLight.shadow.camera );
+scene.add( cameraHelper );
 
 
 // MODEL
@@ -192,7 +199,7 @@ var animation = function(){
     scene.position.y = rotation_trigger.positionY;
     scene.position.z = rotation_trigger.positionZ;
 
-    scene.rotation.y += 0.005;
+    scene.rotation.y -= 0.005;
 
     //
     // outlineMesh2.rotation.x += rotation_trigger.rotationX;

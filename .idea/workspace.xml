@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9d9dbca-4516-4c38-ac60-31bbc7835d8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/canvas.js" afterPath="$PROJECT_DIR$/js/canvas.js" />
     </list>
     <ignored path="landing.iws" />
@@ -27,17 +26,17 @@
     <splitter split-orientation="horizontal" split-proportion="0.39698794">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="756">
-                  <caret line="363" column="9" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
+                <state relative-caret-position="216">
+                  <caret line="369" column="54" selection-start-line="369" selection-start-column="54" selection-end-line="369" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="hat.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="hat.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../../../3d/three.js/works/hat.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="420">
@@ -64,12 +63,12 @@
           <file leaf-file-name="canvas.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/canvas.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="705">
-                  <caret line="178" column="40" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
+                <state relative-caret-position="405">
+                  <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
                   <folding>
                     <element signature="e#1577#1650#0" expanded="false" />
                     <element signature="e#1903#1966#0" expanded="false" />
-                    <element signature="e#3250#3532#0" expanded="false" />
+                    <element signature="e#3317#3599#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -238,12 +237,12 @@
       <workItem from="1474276580700" duration="2845000" />
       <workItem from="1474359384110" duration="5378000" />
       <workItem from="1474450743315" duration="3324000" />
-      <workItem from="1474538547774" duration="2542000" />
+      <workItem from="1474538547774" duration="4711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14497000" />
+    <option name="totallyTimeSpent" value="16666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -307,7 +306,7 @@
           <folding>
             <element signature="e#1577#1650#0" expanded="false" />
             <element signature="e#1903#1966#0" expanded="false" />
-            <element signature="e#3250#3532#0" expanded="false" />
+            <element signature="e#3317#3599#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -335,7 +334,7 @@
           <folding>
             <element signature="e#1577#1650#0" expanded="false" />
             <element signature="e#1903#1966#0" expanded="false" />
-            <element signature="e#3250#3532#0" expanded="false" />
+            <element signature="e#3317#3599#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -363,7 +362,7 @@
           <folding>
             <element signature="e#1577#1650#0" expanded="false" />
             <element signature="e#1903#1966#0" expanded="false" />
-            <element signature="e#3250#3532#0" expanded="false" />
+            <element signature="e#3317#3599#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -391,14 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="363" column="9" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../3d/three.js/works/hat.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -407,14 +398,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="369" column="54" selection-start-line="369" selection-start-column="54" selection-end-line="369" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/canvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="178" column="40" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
+        <state relative-caret-position="405">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="e#1577#1650#0" expanded="false" />
             <element signature="e#1903#1966#0" expanded="false" />
-            <element signature="e#3250#3532#0" expanded="false" />
+            <element signature="e#3317#3599#0" expanded="false" />
           </folding>
         </state>
       </provider>
