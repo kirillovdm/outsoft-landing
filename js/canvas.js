@@ -100,8 +100,8 @@ console.log(hemisphereLight);
 
 
 //CAMERA LIGHT HELPER
-cameraHelper = new THREE.CameraHelper( spotLight.shadow.camera );
-scene.add( cameraHelper );
+// cameraHelper = new THREE.CameraHelper( spotLight.shadow.camera );
+// scene.add( cameraHelper );
 
 
 // MODEL
